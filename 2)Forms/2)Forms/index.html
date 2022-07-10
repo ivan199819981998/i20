@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,47 +10,42 @@
 <body>
    <main class="main">
     <h1>Запись на курсы программирования</h1>
-    <p class="topline">__________________________________</p>
-
-        <div>
-            <legend>Имя:</legend>
-            <input type="text" name="name" placeholder="Андрей">
-        </div>
-   
-        <div class="radio">
-            <input checked name="radio" type="radio" value="Java">Java
-            <input name="radio" type="radio" value="C++">C++
-            <input name="radio" type="radio" value="Python">Python
-            <input name="radio" type="radio" value="PHP">PHP
-            <input name="radio" type="radio" value="JavaScript">JavaScript
-        </div>
-        <div>
-            <legend>Дополнительная информация:</legend>
-            <textarea name="text" id="" cols="24" rows="4"  placeholder="Есть опыт программирования на Java"></textarea>
-        </div>
+    <hr class="topline" width="600px" size="2px" color="cadetblue">
+        <form action="">
+            <div>
+                <legend>Имя:</legend>
+                <input type="text" name="text" placeholder="Андрей" required>
+            </div>
        
-        <div class="">
-            <legend>Секретное слово:</legend>
-            <input type="password" value="Спасибо">
-        </div>
-
-        <label class="container"> С правилами ознакомился и согласен
-            <input type="checkbox" checked="checked" class="check-highload">
-            <span class="highload2"></span>
-          </label>
-
-        <div class="button">  
-            <input type="button" value="Отправить" class="button" name="checkbox" required>
-            <input type="button" value="Очистить" class="button" name="checkbox" required> 
-        </div>
-        <p class="bottomline">__________________________________</p>
+            <div class="radio">
+                <input checked name="radio" type="radio" value="Java" required>Java
+                <input name="radio" type="radio" value="C++" required>C++
+                <input name="radio" type="radio" value="Python" required>Python
+                <input name="radio" type="radio" value="PHP" required>PHP
+                <input name="radio" type="radio" value="JavaScript" required>JavaScript
+            </div>
+            <div>
+                <legend>Дополнительная информация:</legend>
+                <textarea name="textar" id="" cols="24" rows="4"  placeholder="Есть опыт программирования на Java"></textarea>
+            </div>
+           
+            <div class="">
+                <legend>Секретное слово:</legend>
+                <input name="password" type="password" value="Спасибо" required>
+            </div>
+    
+            <label class="container"> С правилами ознакомился и согласен
+                <input name="checkbox" type="checkbox"  class="check-highload" required>
+                <span class="highload2"></span>
+              </label>
+    
+            <div class="reset">  
+                <input type="submit" value="Отправить" class="submit" name="submit">
+                <input type="reset" value="Очистить" class="reset" name="reset"> 
+            </div>
+        </form>
+        <hr class="bottomline" width="600px" size="2px" color="cadetblue">
         <p class="bottomtext">Made by andron13</p>
-     
-   
     </main>
-
-
-
-
 </body>
 </html>
