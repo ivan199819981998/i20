@@ -18,24 +18,20 @@
 }
 
 .topline{
-    margin: -50px 10px;
-    color: cadetblue;
-    font-size: 35px;
+    margin: -15px 10px;
 }
 
 .bottomline{
-    margin: -35px 10px;
-    color: cadetblue;
-    font-size: 35px;
+    margin: 20px 12px;
 }
 
 .bottomtext{
     margin: 0px 10px;
 }
 
-.button{
-    margin: 0 5px;
-}
+
+
+
 
 .container {
     display: block;
@@ -70,11 +66,11 @@
   .highload2:after {
     content: "";
     position: absolute;
-    display: flex;
+    display: none;
   }
 
    .check-highload:checked ~ .highload2:after {
-    display: none;
+    display: flex;
   }
 
    .highload2:after {
